@@ -132,6 +132,8 @@ export default function Home() {
       if (response.ok) {
         setSubmitStatus("success");
         setFormData({ fullName: "", email: "", phone: "", businessName: "" });
+        // Redirect to thank you page
+        window.location.href = "/thank-you";
       } else {
         setSubmitStatus("error");
       }
